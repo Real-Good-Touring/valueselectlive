@@ -6,8 +6,10 @@
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
   border: #392a5b 10px solid;
   border-radius: 12px;
-  max-width: 600px;
+
   background: #100a35;
+  align-self: center;
+  margin-top: 2em;
 }
 
 .video {
@@ -46,5 +48,12 @@ video {
   .video-wrapper {
     /* padding: 0px 10px 20px 10px; */
     margin-top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .video-wrapper {
+    /* padding: 0px 10px 20px 10px; */
+    margin-top: 2em;
   }
 }

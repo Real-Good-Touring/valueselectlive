@@ -137,9 +137,9 @@ p {
     max-width: 130px;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .inner-container {
-    padding: 40px 16px;
+    padding: 40px 100px;
   }
 }
 
@@ -204,13 +204,21 @@ p {
 .poster-container {
   display: flex;
   flex-direction: column;
-
   position: -webkit-sticky;
   position: sticky;
   top: 40px;
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-right: 4em;
 
   align-self: flex-start;
   justify-items: center;
+}
+@media (max-width: 1200px) {
+  .poster-container {
+    margin-right: 2em;
+  }
 }
 @media (max-width: 900px) {
   .flex-layout {
@@ -218,6 +226,7 @@ p {
   }
   .poster-container {
     position: relative;
+    margin-right: 0;
     top: 0;
     width: 75%;
     align-self: center;
