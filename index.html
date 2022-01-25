@@ -21,32 +21,25 @@
         <img src="poster.png" class="logo" style="max-height: 90vh" />
       </div>
 
-      <div class="flex flex-wrap justify-center flex-grow">
-        <div class="video-wrapper justify-items-center flex-grow flex-shrink-0">
-          <div class="video">
-            <video
-              id="video"
-              width="960"
-              height="540"
-              controls
-              poster="thumb.png"
-              preload="auto"
-              autoplay
-            >
-              <source src="Video.mov" type="video/mp4" />
-            </video>
-          </div>
-          <br />
-
-          <p class="text-line-4">WITH JAZZ EMU</p>
+      <div
+        class="flex flex-nowrap justify-center flex-grow"
+        style="flex-direction: column"
+      >
+        <div class="video-wrapper">
+          <video id="video" controls poster="thumb.png" preload="auto" autoplay>
+            <source src="Video.mov" type="video/mp4" />
+          </video>
         </div>
+        <br />
+        <p class="text-line-4">WITH JAZZ EMU</p>
 
         <div id="dates" class="flex-grow flex-shrink-0">
           <!-- <p class="text-line-1">Sold Out</p> -->
         </div>
+
         <a
           href="https://www.realgoodtouring.com"
-          class="flex-grow flex-shrink-0"
+          class="flex-grow"
           style="margin: 3.5em 0; flex-basis: 100%"
           target="_blank"
         >
