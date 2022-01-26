@@ -331,3 +331,10 @@ p {
 .grow:hover {
   transform: scale(1.05, 1.05);
 }
+
+@media (max-width: 900px) {
+  #jazzemu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
