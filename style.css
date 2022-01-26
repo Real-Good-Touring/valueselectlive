@@ -12,6 +12,7 @@ body {
 }
 .container {
   max-width: 900px;
+  margin: 0 auto;
 }
 
 img {
@@ -62,7 +63,7 @@ p {
   font-size: 32px;
 }
 .logo {
-  margin: 0 0 0 auto;
+  margin: 0 auto;
 }
 .line {
   margin: 10px 0 0 0;
@@ -106,6 +107,14 @@ p {
     60px 30px 54px -20px rgba(81, 14, 215, 0.33),
     0 0 54px 0 rgba(122, 52, 214, 0.29);
 }
+
+.button-small {
+  padding: 16px 12px;
+  margin: 20px auto 16px auto;
+  display: block;
+
+  font-size: 24px;
+}
 .text-line-5 {
   font-size: 21px;
   letter-spacing: 0.33px;
@@ -117,6 +126,9 @@ p {
   .button {
     max-width: 245px;
     font-size: 34px;
+  }
+  .button-small {
+    font-size: 18px;
   }
   .text-line-5 {
     font-size: 17px;
@@ -214,14 +226,16 @@ p {
   width: 50%;
   flex-grow: 1;
   flex-shrink: 0;
-  margin-right: 4em;
 
   align-self: flex-start;
   justify-items: center;
 }
+.right {
+  margin-left: 4em;
+}
 @media (max-width: 1200px) {
-  .poster-container {
-    margin-right: 2em;
+  .right {
+    margin-left: 2em;
   }
 }
 @media (max-width: 900px) {
@@ -235,6 +249,9 @@ p {
     width: 75%;
     align-self: center;
   }
+  .right {
+    margin-left: 0;
+  }
 }
 
 .about-photo {
@@ -246,7 +263,6 @@ p {
 
 #about {
   text-align: left;
-  padding: 20px 80px;
 }
 .about-section {
   text-align: left;
@@ -293,7 +309,10 @@ p {
   text-shadow: 0 0 27px rgba(255, 255, 255, 0.37);
 }
 
-.about-section {
+@media (max-width: 900px) {
+  .about-section {
+    padding: 20px;
+  }
 }
 
 .bio {
@@ -303,4 +322,12 @@ p {
 
 .bio p {
   text-transform: none;
+}
+
+.grow {
+  transition: all 0.75s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.05, 1.05);
 }
