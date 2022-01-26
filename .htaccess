@@ -1,0 +1,11 @@
+# mod_rewrite starts here
+
+DirectoryIndex index.html
+
+RewriteEngine on
+
+RewriteCon %{REQUEST_FILENAME} !-d
+
+RewriteCon %{REQUEST_FILENAME}\.html -f
+
+RewriteRule ^(.*)$ $1.html [NC,L]
